@@ -104,7 +104,7 @@ Usage:
    - for Resnets applied to CSV or SVM (sparse data), use the `mlp` pattern. In this latter case, at the moment, the `resnet` is built with blocks made of two layers for each specified layer after the first one. Here is an example: `[300,100,10]` means that a first hidden layer of size `300` is applied followed by a `resnet` block made of two `100` fully connected layer, and another block of two `10` fully connected layers. This is subjected to future changes and more control.
 
 ### Authors
-Pulmonary-nodules-deep-networks is designed and implemented by Jeniffer Wu <yywu@szucla.org>.
+Pulmonary-nodules-deep-networks is designed and implemented by Yingyi Wu <yywu@szucla.org>.
 
 #### Default build with Caffe
 For compiling along with Caffe:
