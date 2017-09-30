@@ -66,28 +66,28 @@ The code makes use of C++ policy design for modularity, performance and putting 
 |--------------------------|-------|------------|---------------|---------------------------|
 | AlexNet                  | Y     | N          | BVLC          |          57.1%                 |
 | SqueezeNet               | Y     | N          | DeepScale              |       59.5%                    | 
-| Inception v1 / GoogleNet | [Y](https://Pulmonary-nodules-deep-networks.com/models/ggnet/bvlc_googlenet.caffemodel)     | [Y](https://Pulmonary-nodules-deep-networks.com/models/tf/inception_v1.pb)          | BVLC / Google |             67.9%              |
-| Inception v2             | N     | [Y](https://Pulmonary-nodules-deep-networks.com/models/tf/inception_v2.pb)          | Google        |     72.2%                      |
-| Inception v3             | N     | [Y](https://Pulmonary-nodules-deep-networks.com/models/tf/inception_v3.pb)          | Google        |         76.9%                  |
-| Inception v4             | N     | [Y](https://Pulmonary-nodules-deep-networks.com/models/tf/inception_v4.pb)          | Google        |         80.2%                  |
-| ResNet 50                | [Y](https://Pulmonary-nodules-deep-networks.com/models/resnet/ResNet-50-model.caffemodel)     | [Y](https://Pulmonary-nodules-deep-networks.com/models/tf/resnet_v1_50/resnet_v1_50.pb)          | MSR           |      75.3%                     |
-| ResNet 101               | [Y](https://Pulmonary-nodules-deep-networks.com/models/resnet/ResNet-101-model.caffemodel)     | [Y](https://Pulmonary-nodules-deep-networks.com/models/tf/resnet_v1_101/resnet_v1_101.pb)          | MSR           |        76.4%                   |
-| ResNet 152               | [Y](https://Pulmonary-nodules-deep-networks.com/models/resnet/ResNet-152-model.caffemodel)     | [Y](https://Pulmonary-nodules-deep-networks.com/models/tf/resnet_v1_152/resnet_v1_152.pb)         | MSR           |               77%            |
-| Inception-ResNet-v2      | N     | [Y](https://Pulmonary-nodules-deep-networks.com/models/tf/inception_resnet_v2.pb)          | Google        |       79.79%                    |
-| VGG-16                   | [Y](https://Pulmonary-nodules-deep-networks.com/models/vgg_16/VGG_ILSVRC_16_layers.caffemodel)     | [Y](https://Pulmonary-nodules-deep-networks.com/models/tf/vgg_16/vgg_16.pb)          | Oxford        |               70.5%            |
-| VGG-19                   | [Y](https://Pulmonary-nodules-deep-networks.com/models/vgg_19/VGG_ILSVRC_19_layers.caffemodel)     | [Y](https://Pulmonary-nodules-deep-networks.com/models/tf/vgg_19/vgg_19.pb)          | Oxford        |               71.3%            |
-| ResNext 50                | [Y](https://Pulmonary-nodules-deep-networks.com/models/resnext/resnext_50)     | N          | https://github.com/terrychenism/ResNeXt           |      76.9%                     |
-| ResNext 101                | [Y](https://Pulmonary-nodules-deep-networks.com/models/resnext/resnext_101)     | N          | https://github.com/terrychenism/ResNeXt           |      77.9%                     |
-| ResNext 152               | [Y](https://Pulmonary-nodules-deep-networks.com/models/resnext/resnext_152)     | N          | https://github.com/terrychenism/ResNeXt           |      78.7%                     |
-| DenseNet-121                   | [Y](https://Pulmonary-nodules-deep-networks.com/models/densenet/densenet_121_32/)     | N          | https://github.com/shicai/DenseNet-Caffe        |               74.9%            |
-| DenseNet-161                   | [Y](https://Pulmonary-nodules-deep-networks.com/models/densenet/densenet_161_48/)     | N          | https://github.com/shicai/DenseNet-Caffe        |               77.6%            |
-| DenseNet-169                   | [Y](https://Pulmonary-nodules-deep-networks.com/models/densenet/densenet_169_32/)     | N          | https://github.com/shicai/DenseNet-Caffe        |               76.1%            |
-| DenseNet-201                   | [Y](https://Pulmonary-nodules-deep-networks.com/models/densenet/densenet_201_32/)     | N          | https://github.com/shicai/DenseNet-Caffe        |               77.3%            |
-| VOC0712 (object detection) | [Y](https://Pulmonary-nodules-deep-networks.com/models/voc0712_dd.tar.gz) | N | https://github.com/weiliu89/caffe/tree/ssd | 71.2 mAP |
+| Inception v1 / GoogleNet | [Y](https://deepdetect.com/models/ggnet/bvlc_googlenet.caffemodel)     | [Y](https://deepdetect.com/models/tf/inception_v1.pb)          | BVLC / Google |             67.9%              |
+| Inception v2             | N     | [Y](https://deepdetect.com/models/tf/inception_v2.pb)          | Google        |     72.2%                      |
+| Inception v3             | N     | [Y](https://deepdetect.com/models/tf/inception_v3.pb)          | Google        |         76.9%                  |
+| Inception v4             | N     | [Y](https://deepdetect.com/models/tf/inception_v4.pb)          | Google        |         80.2%                  |
+| ResNet 50                | [Y](https://deepdetect.com/models/resnet/ResNet-50-model.caffemodel)     | [Y](https://deepdetect.com/models/tf/resnet_v1_50/resnet_v1_50.pb)          | MSR           |      75.3%                     |
+| ResNet 101               | [Y](https://deepdetect.com/models/resnet/ResNet-101-model.caffemodel)     | [Y](https://deepdetect.com/models/tf/resnet_v1_101/resnet_v1_101.pb)          | MSR           |        76.4%                   |
+| ResNet 152               | [Y](https://deepdetect.com/models/resnet/ResNet-152-model.caffemodel)     | [Y](https://deepdetect.com/models/tf/resnet_v1_152/resnet_v1_152.pb)         | MSR           |               77%            |
+| Inception-ResNet-v2      | N     | [Y](https://deepdetect.com/models/tf/inception_resnet_v2.pb)          | Google        |       79.79%                    |
+| VGG-16                   | [Y](https://deepdetect.com/models/vgg_16/VGG_ILSVRC_16_layers.caffemodel)     | [Y](https://deepdetect.com/models/tf/vgg_16/vgg_16.pb)          | Oxford        |               70.5%            |
+| VGG-19                   | [Y](https://deepdetect.com/models/vgg_19/VGG_ILSVRC_19_layers.caffemodel)     | [Y](https://deepdetect.com/models/tf/vgg_19/vgg_19.pb)          | Oxford        |               71.3%            |
+| ResNext 50                | [Y](https://deepdetect.com/models/resnext/resnext_50)     | N          | https://github.com/terrychenism/ResNeXt           |      76.9%                     |
+| ResNext 101                | [Y](https://deepdetect.com/models/resnext/resnext_101)     | N          | https://github.com/terrychenism/ResNeXt           |      77.9%                     |
+| ResNext 152               | [Y](https://deepdetect.com/models/resnext/resnext_152)     | N          | https://github.com/terrychenism/ResNeXt           |      78.7%                     |
+| DenseNet-121                   | [Y](https://deepdetect.com/models/densenet/densenet_121_32/)     | N          | https://github.com/shicai/DenseNet-Caffe        |               74.9%            |
+| DenseNet-161                   | [Y](https://deepdetect.com/models/densenet/densenet_161_48/)     | N          | https://github.com/shicai/DenseNet-Caffe        |               77.6%            |
+| DenseNet-169                   | [Y](https://deepdetect.com/models/densenet/densenet_169_32/)     | N          | https://github.com/shicai/DenseNet-Caffe        |               76.1%            |
+| DenseNet-201                   | [Y](https://deepdetect.com/models/densenet/densenet_201_32/)     | N          | https://github.com/shicai/DenseNet-Caffe        |               77.3%            |
+| VOC0712 (object detection) | [Y](https://deepdetect.com/models/voc0712_dd.tar.gz) | N | https://github.com/weiliu89/caffe/tree/ssd | 71.2 mAP |
 
 More models:
 
-- List of free, even for commercial use, deep neural nets for image classification, and character-based convolutional nets for text classification: http://www.Pulmonary-nodules-deep-networks.com/applications/list_models/
+- List of free, even for commercial use, deep neural nets for image classification, and character-based convolutional nets for text classification: http://www.deepdetect.com/applications/list_models/
 
 #### Templates
 
@@ -104,7 +104,7 @@ Usage:
    - for Resnets applied to CSV or SVM (sparse data), use the `mlp` pattern. In this latter case, at the moment, the `resnet` is built with blocks made of two layers for each specified layer after the first one. Here is an example: `[300,100,10]` means that a first hidden layer of size `300` is applied followed by a `resnet` block made of two `100` fully connected layer, and another block of two `10` fully connected layers. This is subjected to future changes and more control.
 
 ### Authors
-Pulmonary-nodules-deep-networks is designed and implemented by Yingyi Wu <yywu@szucla.org>.
+Pulmonary-nodules-deep-networks is designed and implemented by Yingyi Wu  <yywu@szucla.org>.
 
 #### Default build with Caffe
 For compiling along with Caffe:
