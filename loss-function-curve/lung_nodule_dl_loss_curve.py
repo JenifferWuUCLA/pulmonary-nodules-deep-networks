@@ -29,7 +29,7 @@ y_1 = test_net_loss
 y_2 = train_net_loss
 
 # plot
-# Create four subplots sharing y axis
+# Create two subplots sharing y axis
 fig, (ax1, ax2) = plt.subplots(2, sharey=True)
 
 ax1.plot(x, y_1, 'C1')
