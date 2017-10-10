@@ -24,7 +24,7 @@ I0929 09:53:42.930240 29621 solver.cpp:87] Creating training net from net file: 
 I0929 09:53:42.930691 29621 net.cpp:294] The NetState phase (0) differed from the phase (1) specified by a rule in layer data
 I0929 09:53:42.930711 29621 net.cpp:294] The NetState phase (0) differed from the phase (1) specified by a rule in layer accuracy
 I0929 09:53:42.930840 29621 net.cpp:51] Initializing net from parameters: 
-name: "ResNet-50"
+name: "pulmonaryNodulesNet"
 state {
   phase: TRAIN
   level: 0
@@ -588,7 +588,7 @@ I0929 09:53:44.843947 29621 net.cpp:255] Network initialization done.
 I0929 09:53:44.844367 29621 solver.cpp:172] Creating test net (#0) specified by net file: models/pulmonary_nodules_net_caffenet/train_val.prototxt
 I0929 09:53:44.844395 29621 net.cpp:294] The NetState phase (1) differed from the phase (0) specified by a rule in layer data
 I0929 09:53:44.844527 29621 net.cpp:51] Initializing net from parameters: 
-name: "ResNet-50"
+name: "pulmonaryNodulesNet"
 state {
   phase: TEST
 }
@@ -1189,7 +1189,7 @@ I0929 09:53:46.236810 29621 net.cpp:242] This network produces output loss
 I0929 09:53:46.236821 29621 net.cpp:255] Network initialization done.
 I0929 09:53:46.236877 29621 solver.cpp:56] Solver scaffolding done.
 I0929 09:53:46.237327 29621 caffe.cpp:248] Starting Optimization
-I0929 09:53:46.237332 29621 solver.cpp:272] Solving ResNet-50
+I0929 09:53:46.237332 29621 solver.cpp:272] Solving pulmonaryNodulesNet
 I0929 09:53:46.237334 29621 solver.cpp:273] Learning Rate Policy: step
 I0929 09:53:46.239064 29621 solver.cpp:330] Iteration 0, Testing net (#0)
 I0929 09:53:46.830606 29621 blocking_queue.cpp:49] Waiting for data
