@@ -36,7 +36,7 @@ for log_row in log_Rows:
     if "loss = " in log_str:
         t_sIndex = log_str.index("I0929 ")
         t_eIndex = log_str.index(" 29621")
-        loss_time = log_str[t_sIndex + 1: t_eIndex].strip()
+        loss_time = log_str[t_sIndex + 5: t_eIndex].strip()
         l_sIndex = log_str.index("= ")
         l_eIndex = log_str.index(" (*")
         loss = log_str[l_sIndex + 1: l_eIndex].strip()
