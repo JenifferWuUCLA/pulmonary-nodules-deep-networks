@@ -3,10 +3,11 @@
 ## 天池医疗AI大赛[第一季]：Caffe训练基于卷积神经网络的肺结节分类器
 > ##### @author Jeniffer Wu
 
-服务器数据集分布：
-| Total num   | TRAIN num  | TEST num   |
-|------------ |------------|------------|
-| 4908        | 3504       | 1404       | 
+#### 服务器数据集分布：
+
+|            | Total num   | TRAIN num  | TEST num   |
+|------------|------------ |------------|------------|
+| Caffe      | 4908        | 3504       | 1404       | 
 
 Current config for 8 GPUs with 32 mini-batch size each.
 
