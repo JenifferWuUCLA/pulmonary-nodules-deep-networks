@@ -1,6 +1,6 @@
-name: "ResNet-50"
+name: "ResNet-50-Lungnodulesnet"
 layer {
-  name: "resnet_50"
+  name: "resnet_50-lungnodulesnet"
   type: "Data"
   top: "data"
   top: "label"
@@ -19,7 +19,7 @@ layer {
   }
 }
 layer {
-  name: "resnet_50"
+  name: "resnet_50-lungnodulesnet"
   type: "MemoryData"
   top: "data"
   top: "label"
