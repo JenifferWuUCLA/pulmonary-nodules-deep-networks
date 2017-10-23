@@ -8,12 +8,13 @@ layer {
     phase: TRAIN
   }
   transform_param {
+    crop_size: 512
     mirror: true
-    mean_file: "mean.binaryproto"
+    mean_file: "data/pulmonary_nodules/pulmonary_nodules_net_mean.binaryproto"
   }
   data_param {
-    source: "train.lmdb"
-    batch_size: 32
+    source: "examples/pulmonary_nodules_net/pulmonary_nodules_train_lmdb"
+    batch_size: 5
     backend: LMDB
   }
 }
@@ -25,11 +26,21 @@ layer {
   memory_data_param {
     batch_size: 32
     channels: 3
-    height: 224
-    width: 224
+    height: 512
+    width: 512
   }
  include {
     phase: TEST
+  }
+  transform_param {
+    crop_size: 512
+    mirror: false
+    mean_file: "data/pulmonary_nodules/pulmonary_nodules_net_mean.binaryproto"
+  }
+  data_param {
+    source: "examples/pulmonary_nodules_net/pulmonary_nodules_val_lmdb"
+    batch_size: 5
+    backend: LMDB
   }
 }
 layer {
@@ -2693,8 +2704,8 @@ layer {
 	name: "pool5"
 	type: "Pooling"
 	pooling_param {
-		kernel_size: 7
-		stride: 1
+		kernel_size: 3
+		stride: 2
 		pool: AVE
 	}
 }
@@ -2705,7 +2716,7 @@ layer {
 	name: "fc1000"
 	type: "InnerProduct"
 	inner_product_param {
-		num_output: 1000
+		num_output: 3
 		weight_filler {
       		  type: "xavier"
     		}
