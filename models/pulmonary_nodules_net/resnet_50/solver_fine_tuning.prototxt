@@ -1,4 +1,4 @@
-net: "train_val.prototxt"
+net: "models/pulmonary_nodules_net_caffenet/train_val.prototxt"
 test_iter: 1140
 test_interval: 4160
 test_initialization: false
@@ -12,5 +12,5 @@ max_iter: 450000
 momentum: 0.9
 weight_decay: 0.0001
 snapshot: 26500
-snapshot_prefix: "resnet_50-lungnodulesnet"
+snapshot_prefix: "models/pulmonary_nodules_net_caffenet/resnet_50-lungnodulesnet"
 solver_mode: GPU
