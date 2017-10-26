@@ -20,7 +20,7 @@ layer {
 }
 layer {
   name: "resnet_50-lungnodulesnet"
-  type: "MemoryData"
+  type: "Data"
   top: "data"
   top: "label"
   include {
