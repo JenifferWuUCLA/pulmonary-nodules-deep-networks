@@ -40,9 +40,6 @@ for log_row in log_Rows:
         iteration = log_str[t_sIndex + 12: t_eIndex].strip()
         print(iteration)
         print(log_str)
-        # 去掉最初的50次迭代，zoom in看一下之后迭代的loss走势，现在的Loss function曲线被初始的较大loss遮盖掉了后续loss的走势。
-        if iteration < 50:
-            continue
         l_sIndex = log_str.index("loss = ")
         loss = log_str[l_sIndex + 7:].strip()
         # print(loss)
