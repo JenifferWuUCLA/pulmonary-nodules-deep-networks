@@ -12,6 +12,9 @@
 
 #### ResNet50 Caffe deep learning loss:
 ##### ![Index Page](https://github.com/JenifferWuUCLA/pulmonary-nodules-deep-networks/blob/master/loss-function-curve/ResNet50%20Caffe%20deep%20learning%20loss.png)
+##### ![Index Page](https://github.com/JenifferWuUCLA/pulmonary-nodules-deep-networks/blob/master/loss-function-curve/ResNet50%20Caffe%20deep%20learning_last%20friday_skip50.png)
+##### ![Index Page](https://github.com/JenifferWuUCLA/pulmonary-nodules-deep-networks/blob/master/loss-function-curve/ResNet50%20Caffe%20deep%20learning_this_monday_skip500-800%5D.png)
+##### ![Index Page](https://github.com/JenifferWuUCLA/pulmonary-nodules-deep-networks/blob/master/loss-function-curve/ResNet50%20Caffe%20deep%20learning_this_tuesday_skip111500-%5D.png)
 
 Current config for 8 GPUs with 32 mini-batch size each.
 
