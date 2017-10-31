@@ -7,11 +7,10 @@
 
 |            | Total num   | TRAIN num  | TEST num   |
 |------------|------------ |------------|------------|
-| Caffe      | 4908        | 3504       | 1404       | 
+| Caffe      | 6060        | 4158       | 1902       | 
 
 
 #### ResNet50 Caffe deep learning loss:
-##### ![Index Page](https://github.com/JenifferWuUCLA/pulmonary-nodules-deep-networks/blob/master/loss-function-curve/ResNet50%20Caffe%20deep%20learning%20loss.png)
 ##### ![Index Page](https://github.com/JenifferWuUCLA/pulmonary-nodules-deep-networks/blob/master/loss-function-curve/ResNet50%20Caffe%20deep%20learning_last%20friday_skip50.png)
 ##### ![Index Page](https://github.com/JenifferWuUCLA/pulmonary-nodules-deep-networks/blob/master/loss-function-curve/ResNet50%20Caffe%20deep%20learning_this_monday_skip500-800%5D.png)
 ##### ![Index Page](https://github.com/JenifferWuUCLA/pulmonary-nodules-deep-networks/blob/master/loss-function-curve/ResNet50%20Caffe%20deep%20learning_this_tuesday_skip111500-%5D.png)
