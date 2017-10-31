@@ -1,4 +1,4 @@
-name: "ResNet-Lungnodulesnet"
+name: "ResNet50-Lungnodulesnet"
 layer {
   name: "data"
   type: "Data"
