@@ -2611,8 +2611,8 @@ layer {
 	top: "pool2"
 	pooling_param {
 		pool: AVE
-		kernel_size: 3
-		stride: 2
+		kernel_size: 7
+		stride: 1
 	}
 }
 layer {
@@ -2667,6 +2667,6 @@ layer {
 		phase: TEST
 	}
 	accuracy_param {
-		top_k: 5
+		top_k: 3
 	}
 }
