@@ -20,14 +20,14 @@ caffe.set_mode_gpu()
 solver = caffe.SGDSolver(caffe_root + 'models/pulmonary_nodules_net_caffenet/.prototxt')
 
 # 等价于solver文件中的max_iter，即最大解算次数
-niter = 9380
+niter = 450000
 # 每隔100次收集一次数据
-display = 100
+display = 40
 
 # 每次测试进行100次解算，10000/100
-test_iter = 100
+test_iter = 1140
 # 每500次训练进行一次测试（100次解算），60000/64
-test_interval = 938
+test_interval = 4160
 
 # 初始化
 train_loss = np.zeros(np.ceil(niter * 1.0 / display))
@@ -47,7 +47,7 @@ for it in range(niter):
     # 进行一次解算
     solver.step(1)
     # 每迭代一次，训练batch_size张图片
-    _train_loss += solver.net.blobs['SoftmaxWithLoss1'].data
+    _train_loss += solver.net.blobs['loss'].data
     if it % display == 0:
         # 计算平均train loss
         train_loss[it // display] = _train_loss / display
@@ -58,9 +58,9 @@ for it in range(niter):
             # 进行一次测试
             solver.test_nets[0].forward()
             # 计算test loss
-            _test_loss += solver.test_nets[0].blobs['SoftmaxWithLoss1'].data
+            _test_loss += solver.test_nets[0].blobs['loss'].data
             # 计算test accuracy
-            _accuracy += solver.test_nets[0].blobs['Accuracy1'].data
+            _accuracy += solver.test_nets[0].blobs['accuracy'].data
             # 计算平均test loss
         test_loss[it / test_interval] = _test_loss / test_iter
         # 计算平均test accuracy
