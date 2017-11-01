@@ -48,7 +48,7 @@ class Loss(object):
 
             flag = line.find("Test net output")
             if flag >= 0:
-                flag = line.find("accuracy")
+                flag = line.find("Accuracy1")
                 if flag >= 0:
                     self.out_put.test_accu.append(float(line[flag + 10:]))
 

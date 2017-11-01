@@ -60,7 +60,7 @@ for it in range(niter):
             # 计算test loss
             _test_loss += solver.test_nets[0].blobs['loss'].data
             # 计算test accuracy
-            _accuracy += solver.test_nets[0].blobs['accuracy'].data
+            _accuracy += solver.test_nets[0].blobs['Accuracy1'].data
             # 计算平均test loss
         test_loss[it / test_interval] = _test_loss / test_iter
         # 计算平均test accuracy
