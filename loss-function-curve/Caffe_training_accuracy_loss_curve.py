@@ -29,7 +29,7 @@ for it in range(niter):
     if it % test_interval == 0:
         acc = solver.test_nets[0].blobs['accuracy'].data
         print 'Iteration', it, 'testing...', 'accuracy:', acc
-        test_acc[it] = acc
+        test_acc[it / test_interval] = acc
 
 print test_acc
 
