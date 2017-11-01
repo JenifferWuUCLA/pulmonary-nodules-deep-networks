@@ -26,4 +26,4 @@ python plot_training_log.py 2 testloss.png train_caffenet_ResNet50.log
 ./plot_training_log.py.example 0 save.png train_caffenet_ResNet50.log
 
 
-python draw_loss.py --log train_caffenet_ResNet50.log
+python Caffe_draw_training_loss.py --log train_caffenet_ResNet50.log
