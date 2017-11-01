@@ -50,7 +50,7 @@ class Loss(object):
             if flag >= 0:
                 flag = line.find("Accuracy1")
                 if flag >= 0:
-                    self.out_put.test_accu.append(float(line[flag + 10:]))
+                    self.out_put.test_accu.append(float(line[flag + 12:]))
 
             flag = line.find("Iteration")
             if flag >= 0:

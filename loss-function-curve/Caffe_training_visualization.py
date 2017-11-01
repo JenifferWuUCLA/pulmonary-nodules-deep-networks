@@ -17,7 +17,7 @@ os.chdir(caffe_root)
 caffe.set_device(0)
 caffe.set_mode_gpu()
 # 使用SGDSolver，即随机梯度下降算法
-solver = caffe.SGDSolver(caffe_root + 'models/pulmonary_nodules_net_caffenet/.prototxt')
+solver = caffe.SGDSolver(caffe_root + 'models/pulmonary_nodules_net_caffenet/solver.prototxt')
 
 # 等价于solver文件中的max_iter，即最大解算次数
 niter = 450000
@@ -30,9 +30,9 @@ test_iter = 1140
 test_interval = 4160
 
 # 初始化
-train_loss = np.zeros(np.ceil(niter * 1.0 / display))
-test_loss = np.zeros(np.ceil(niter * 1.0 / test_interval))
-test_acc = np.zeros(np.ceil(niter * 1.0 / test_interval))
+train_loss = np.zeros(int(np.ceil(niter * 1.0 / display)))
+test_loss = np.zeros(int(np.ceil(niter * 1.0 / test_interval)))
+test_acc = np.zeros(int(np.ceil(niter * 1.0 / test_interval)))
 
 # iteration 0，不计入
 solver.step(1)

@@ -1,6 +1,7 @@
-caffe-master/tools/extra/parse_log.sh  
-caffe-master/tools/extra/extract_seconds.py
-caffe-master/tools/extra/plot_training_log.py.example
+/root/code/caffe/tools/extra/parse_log.sh
+/root/code/caffe/tools/extra/parse_log.py 
+/root/code/caffe/tools/extra/extract_seconds.py
+/root/code/caffe/tools/extra/plot_training_log.py.example
 
 
 # step1：保存日志文件
@@ -14,16 +15,18 @@ $TOOLS/caffe train \  
     --solver=models/pulmonary_nodules_net_caffenet/solver.prototxt  
 
 # step2：解析日志文件
-cp caffe-master/tools/extra/parse_log.sh /home/ucla/Downloads/Log-output/
-cp caffe-master/tools/extra/extract_seconds.py /home/ucla/Downloads/Log-output/
-cp caffe-master/tools/extra/plot_training_log.py.example /home/ucla/Downloads/Log-output/
+cp /root/code/caffe/tools/extra/parse_log.sh /home/ucla/Downloads/Log-output/
+cp /root/code/caffe/tools/extra/parse_log.py /home/ucla/Downloads/Log-output/
+cp /root/code/caffe/tools/extra/extract_seconds.py /home/ucla/Downloads/Log-output/
+cp /root/code/caffe/tools/extra/plot_training_log.py.example /home/ucla/Downloads/Log-output/
+mv plot_training_log.py.example plot_training_log.py
 
-./tools/extra/python parse_log.py train_caffenet_ResNet50.log ./
+python parse_log.py train_caffenet_ResNet50.log ./
 ./parse_log.sh train_caffenet_ResNet50.log
 
 # step3：绘制accuracy和loss曲线
 python plot_training_log.py 2 testloss.png train_caffenet_ResNet50.log
-./plot_training_log.py.example 0 save.png train_caffenet_ResNet50.log
+./plot_training_log.py 0 save.png train_caffenet_ResNet50.log
 
 
 python Caffe_draw_training_loss.py --log train_caffenet_ResNet50.log
