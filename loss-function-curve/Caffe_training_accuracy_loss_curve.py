@@ -13,8 +13,8 @@ caffe.set_device(0)
 caffe.set_mode_gpu()
 solver = caffe.SGDSolver(caffe_root + 'models/pulmonary_nodules_net_caffenet/solver.prototxt')
 
-niter = 4000
-test_interval = 200
+niter = 450000
+test_interval = 4160
 train_loss = np.zeros(niter)
 test_acc = np.zeros(int(np.ceil(niter / test_interval)))
 
