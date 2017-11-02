@@ -14,4 +14,3 @@ weight_decay: 0.0001
 snapshot: 15000
 snapshot_prefix: "models/pulmonary_nodules_net_caffenet/resnet_50-lungnodulesnet"
 solver_mode: GPU
-type: "Nesterov"
