@@ -4,11 +4,11 @@ test_interval: 832
 test_initialization: false
 display: 40
 average_loss: 40
-base_lr: 0.01
+base_lr: 0.001
 lr_policy: "step"
-stepsize: 606
-gamma: 0.1
-max_iter: 12120
+stepsize: 300
+gamma: 0.01
+max_iter: 121200
 momentum: 0.9
 weight_decay: 0.0001
 snapshot: 700
