@@ -44,7 +44,8 @@ for log_row in log_Rows:
         loss = log_str[l_sIndex + 7:].strip()
         # print(loss)
         train_net_loss_data = loss
-        loss_function_curve_row(iteration, "0", train_net_loss_data)
+        for i in range(40):
+            loss_function_curve_row(iteration, "0", train_net_loss_data)
 
 # Write out the loss_function_curve_data.csv file.
 print(loss_function_curve_data)
