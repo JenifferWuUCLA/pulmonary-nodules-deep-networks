@@ -2616,10 +2616,10 @@ layer {
 	}
 }
 layer {
-	name: "fc1000"
+	name: "fc4"
 	type: "InnerProduct"
 	bottom: "pool2"
-	top: "fc1000"
+	top: "fc4"
 	param {
 		lr_mult: 1
 		decay_mult: 1
@@ -2629,7 +2629,7 @@ layer {
 		decay_mult: 0
 	}
 	inner_product_param {
-		num_output: 3
+		num_output: 4
 		weight_filler {
 			type: "gaussian"
 			std: 0.01
@@ -2643,14 +2643,14 @@ layer {
 layer {
 	name: "SoftmaxWithLoss1"
 	type: "SoftmaxWithLoss"
-	bottom: "fc1000"
+	bottom: "fc4"
 	bottom: "label"
 	top: "SoftmaxWithLoss1"
 }
 layer {
 	name: "Accuracy1"
 	type: "Accuracy"
-	bottom: "fc1000"
+	bottom: "fc4"
 	bottom: "label"
 	top: "Accuracy1"
 	include {
@@ -2660,7 +2660,7 @@ layer {
 layer {
 	name: "Accuracy5"
 	type: "Accuracy"
-	bottom: "fc1000"
+	bottom: "fc4"
 	bottom: "label"
 	top: "Accuracy5"
 	include {
