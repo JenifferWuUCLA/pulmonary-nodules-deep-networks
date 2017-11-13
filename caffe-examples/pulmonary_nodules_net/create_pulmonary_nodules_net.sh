@@ -14,8 +14,8 @@ VAL_DATA_ROOT=../Pulmonary_nodules_data/val/
 # already been resized using another tool.
 RESIZE=true
 if $RESIZE; then
-  RESIZE_HEIGHT=512
-  RESIZE_WIDTH=512
+  RESIZE_HEIGHT=50
+  RESIZE_WIDTH=50
 else
   RESIZE_HEIGHT=0
   RESIZE_WIDTH=0
