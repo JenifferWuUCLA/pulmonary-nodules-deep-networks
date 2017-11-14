@@ -2667,6 +2667,6 @@ layer {
 		phase: TEST
 	}
 	accuracy_param {
-		top_k: 3
+		top_k: 4
 	}
 }
