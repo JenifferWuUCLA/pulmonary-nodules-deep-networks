@@ -12,7 +12,7 @@ VAL_DATA_ROOT=../Pulmonary_nodules_data/val/
 
 # Set RESIZE=true to resize the images to 512x512. Leave as false if images have
 # already been resized using another tool.
-RESIZE=true
+RESIZE=false
 if $RESIZE; then
   RESIZE_HEIGHT=512
   RESIZE_WIDTH=512
