@@ -25,8 +25,8 @@ test_net_accuracy1 = df['test_net_accuracy1_data'].astype(float)
 
 x = range(len(loss_time))
 y_1 = test_net_accuracy1
-new_x = x[50:]
-new_y_1 = y_1[50:]
+new_x = x[:]
+new_y_1 = y_1[:]
 
 # plot
 # Create two subplots sharing y axis
